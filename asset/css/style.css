@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+}
+
+/* Utility */
+
+.text_uppercase{
+    text-transform: uppercase;
+}
+
+.text_capitalize{
+    text-transform: capitalize;
+}
+
+.container{
+    width: 80%;
+}
+
+.m-0-auto{
+    margin: 0 auto;
+}
+
+/* Utility */
