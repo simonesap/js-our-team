@@ -18,12 +18,11 @@
     text-transform: capitalize;
 }
 
-.container{
-    width: 80%;
-}
-
 .m-0-auto{
     margin: 0 auto;
 }
 
+.container_cust {
+    width: 50%;
+}
 /* Utility */

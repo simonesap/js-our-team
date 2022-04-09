@@ -16,37 +16,37 @@ let ilNostroTeam = [
         nome: 'Angela',
         cognome: 'Caroll',
         ruolo: 'chief-editor',
-        foto: './asset\img\angela-caroll-chief-editor.jpg'
+        foto: 'asset/img/angela-caroll-chief-editor.jpg'
     },
     {
         nome: 'Angela',
         cognome: 'Moss',
         ruolo: 'social-media-manager',
-        foto: 'asset\img\angela-lopez-social-media-manager.jpg'
+        foto: 'asset/img/angela-lopez-social-media-manager.jpg'
     },
     {
         nome: 'Barbara',
         cognome: 'Ramos',
         ruolo: 'graphic-designer',
-        foto: 'asset\img\barbara-ramos-graphic-designer.jpg'
+        foto: 'asset/img/barbara-ramos-graphic-designer.jpg'
     },
     {
         nome: 'Scott',
         cognome: 'Estrada',
         ruolo: 'developer',
-        foto: 'asset\img\scott-estrada-developer.jpg'
+        foto: 'asset/img/scott-estrada-developer.jpg'
     },
     {
         nome: 'Walter',
         cognome: 'Gordon',
         ruolo: 'office-manager',
-        foto: 'asset\img\walter-gordon-office-manager.jpg'
+        foto: 'asset/img/walter-gordon-office-manager.jpg'
     },
     {
         nome: 'Wayne',
         cognome: 'Barnett',
         ruolo: 'founder-ceo',
-        foto: 'asset\img\wayne-barnett-founder-ceo.jpg'
+        foto: 'asset/img/wayne-barnett-founder-ceo.jpg'
     },
     
 ];
@@ -55,14 +55,12 @@ console.log(ilNostroTeam)
 
 for(i=0; i < ilNostroTeam.length; i++){
 
-    document.getElementById('rootMain').innerHTML += `<div class="row d-flex align-items-center justify-content-center" style="width: 18rem;">
-        <div class="col">
+    document.getElementById('rootMain').innerHTML += `<div class="col-3" style="width: 25rem;">
             <img src="${ilNostroTeam[i].foto}" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${ilNostroTeam[i].nome} ${ilNostroTeam[i].cognome}</h5>
                 <p class="">${ilNostroTeam[i].ruolo}</p>
             </div>
-        </div>
-    </div>`
+        </div>`
     }
 
