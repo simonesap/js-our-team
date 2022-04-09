@@ -11,16 +11,16 @@
 // Cosa conterrà il campo che rappresenta la foto in ciascun oggetto? Come possiamo fare per trasformarla in effettiva immagine visibile nell'html ?
 
 
-let ilNostroTeam= [
+let ilNostroTeam = [
     {
         nome: 'Angela',
         cognome: 'Caroll',
         ruolo: 'chief-editor',
-        foto: 'asset\img\angela-caroll-chief-editor.jpg'
+        foto: './asset\img\angela-caroll-chief-editor.jpg'
     },
     {
         nome: 'Angela',
-        cognome: 'Lopez',
+        cognome: 'Moss',
         ruolo: 'social-media-manager',
         foto: 'asset\img\angela-lopez-social-media-manager.jpg'
     },
@@ -54,17 +54,15 @@ let ilNostroTeam= [
 console.log(ilNostroTeam)
 
 for(i=0; i < ilNostroTeam.length; i++){
-    for (let key in ilNostroTeam[i]){
-        console.log(ilNostroTeam[i][key]);
 
-    document.getElementById('rootMain').innerHTML += `<div class="row d-flex justify-content-center" style="width: 18rem;">
-        <div class="col-4"
-            <img src="key[i][foto]" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">${key[i][nome]}</h5>
-                <p class="">${ilNostroTeam[i][ruolo]}</p>
-                </div>
+    document.getElementById('rootMain').innerHTML += `<div class="row d-flex align-items-center justify-content-center" style="width: 18rem;">
+        <div class="col">
+            <img src="${ilNostroTeam[i].foto}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${ilNostroTeam[i].nome} ${ilNostroTeam[i].cognome}</h5>
+                <p class="">${ilNostroTeam[i].ruolo}</p>
             </div>
-        </div>`
+        </div>
+    </div>`
     }
-}
+
